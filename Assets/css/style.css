@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #d35649;
+    --primary-gray: #98a5a5;
+    --primary-blue: #509bd7;
+    --gray-footer: #1f1f1f;
+    --gray-footer-btn: #444;
+    --primary-purple: #575a89;
+    --light-gray: #eee;
+        }
+        
+       
+    
+    #mobile_nav {
+        display : none;
+    }
+    
+    .navbar-expand-sm {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    #desktop_nav {
+        display : flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    #form-search {
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-block-color: rgba(255, 255, 255, 0.7);
+      margin: auto;
+      justify-content: center;
+      width: 60%;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    
+    #form-inline {
+      display: -webkit-inline-box;
+      padding: 20px;
+      width: 90%;
+    }
+    
+    .link {background-color: rgba(255, 255, 255, 0.8);}
+    .link:hover {background-color: rgba(238, 238, 238, 0.637);}
+    
+    .footer-link:hover {font-weight:600}
+    
+    .mobile_view {display: none}
+    
+    #header_menu .nav-link, #footer_menu .nav-link {
+        color:#fff;
+    }
+    
+    #header_menu .nav-link:hover, #footer_menu .nav-link:hover {
+        color:var(--primary-gray);
+    }
+
+    .contact_mail {
+        text-decoration: none;
+    }
+
+    .contact_mail:hover {
+        text-decoration: underline;
+    }
+
+    #social_link .nav-link {
+        color:#fff;
+    }
+    
+    #social_link .nav-link:hover {
+        color:var(--primary-blue);
+    }
+    
+    #more_detail {
+        text-decoration: none;
+        color: #1f1f1f;
+    }
+
+    #more_detail:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 756px) {
+    .mobile_view {display: block}
+    
+    #mobile_nav {
+        display : flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .navbar-expand-sm {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #desktop_nav, #form-inline {
+        display: none;
+    }
+    
+    .desktop_view {
+        display: none;
+    }
+    
+    
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    
+    .social {
+        display: flex;
+          flex-wrap: wrap;
+    }
+    
+    .social_column {
+        flex: 30%
+        }
+    
+    }
